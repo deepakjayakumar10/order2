@@ -131,7 +131,7 @@ if audio_bytes:
     audio = speech.RecognitionAudio(content=audio_bytes)
     config = speech.RecognitionConfig(
                     encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
-                    #sample_rate_hertz=44100,
+                    sample_rate_hertz=44100,
                     language_code="en-US",
                     model="default",
                     audio_channel_count=2,
