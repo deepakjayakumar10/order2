@@ -138,7 +138,7 @@ if audio_bytes:
                     enable_word_confidence=True,
                     enable_word_time_offsets=True,
     )
-    
+    st.audio(audio_bytes)
     #operation = speech.SpeechClient().long_running_recognize(config=config, audio=audio)
     #conversion = operation.result(timeout=90)
     #for result in conversion.results:
