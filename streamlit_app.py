@@ -142,7 +142,7 @@ if audio_bytes:
                     enable_word_time_offsets=True,
     )
     st.audio(audio_bytes)
-    Mytext = r.recognize_google(audio)
+    #Mytext = r.recognize_google(audio)
     #operation = client.recognize(config=config, audio=audio)
     #conversion = operation.result(timeout=90)
     #for result in conversion.results:
