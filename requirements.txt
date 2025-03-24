@@ -11,3 +11,4 @@ bokeh
 streamlit_bokeh_events
 audio-recorder-streamlit
 google-cloud-speech
+os
