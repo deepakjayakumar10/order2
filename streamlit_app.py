@@ -123,10 +123,10 @@ def display_content(
 st.title(":cup_with_straw: ORDE AI 🔍")
 #initialize the recognizer
 r = sr.Recognizer()
-audio_value = st.audio_input("Record a voice message")
+#audio_value = st.audio_input("Record a voice message")
 client = speech.SpeechClient(credentials=credentials)
-#audio_bytes = audio_recorder(recording_color="#6aa36f", neutral_color="#e82c58")
-audio_bytes = audio_value
+audio_bytes = audio_recorder(recording_color="#6aa36f", neutral_color="#e82c58")
+#audio_bytes = audio_value
 if audio_bytes:
     audio = speech.RecognitionAudio(content=audio_bytes)
     config = speech.RecognitionConfig(
@@ -139,12 +139,12 @@ if audio_bytes:
                     enable_word_time_offsets=True,
     )
     
-    operation = speech.SpeechClient().long_running_recognize(config=config, audio=audio)
-    conversion = operation.result(timeout=90)
-    for result in conversion.results:
-        pass
+    #operation = speech.SpeechClient().long_running_recognize(config=config, audio=audio)
+    #conversion = operation.result(timeout=90)
+    #for result in conversion.results:
+    #    pass
                   
-    reccord_text = (result.alternatives[0].transcript)
+    #reccord_text = (result.alternatives[0].transcript)
 
 
 # st.markdown(f"Semantic Model: `{FILE}`")
