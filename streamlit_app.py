@@ -13,7 +13,7 @@ from bokeh.models import CustomJS
 from streamlit_bokeh_events import streamlit_bokeh_events
 from audio_recorder_streamlit import audio_recorder
 from google.cloud import speech_v1 as speech
-
+from google.oauth2 import service_account
 
 
 
