@@ -139,7 +139,7 @@ if audio_bytes:
                     enable_word_time_offsets=True,
     )
     st.audio(audio_bytes)
-    #operation = client.long_running_recognize(config=config, audio=audio)
+    operation = client.long_running_recognize(config=config, audio=audio)
     #conversion = operation.result(timeout=90)
     #for result in conversion.results:
     #    pass
