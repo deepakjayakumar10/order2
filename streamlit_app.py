@@ -15,6 +15,8 @@ from audio_recorder_streamlit import audio_recorder
 from google.cloud import speech_v1 as speech
 from google.oauth2 import service_account
 
+credentials = service_account.Credentials.from_service_account_file("./key.json")
+scoped_credentials = credentials.with_scopes(["https://www.googleapis.com/auth/cloud-platform"])
 
 
 HOST = "CMBJTAT-KUB07435.snowflakecomputing.com"
